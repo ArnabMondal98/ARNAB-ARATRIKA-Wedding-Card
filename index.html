@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ARNAB × ARATRIKA — THE JOURNEY TO FOREVER</title>
+  <meta name="description" content="Join Arnab & Aratrika as they begin their journey to forever on 14 December 2026.">
+  <meta name="theme-color" content="#040914">
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="ARNAB × ARATRIKA — THE JOURNEY TO FOREVER">
+  <meta property="og:description" content="Join Arnab & Aratrika as they begin their journey to forever on 14 December 2026.">
+  <meta property="og:image" content="/assets/couple_bengali.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ARNAB × ARATRIKA — THE JOURNEY TO FOREVER">
+  <meta name="twitter:description" content="Join Arnab & Aratrika as they begin their journey to forever on 14 December 2026.">
+  <meta name="twitter:image" content="/assets/couple_bengali.jpg">
+
+  <!-- Preload Primary Hero -->
+  <link rel="preload" as="image" href="/assets/front_screen_design.jpg">
+  <link rel="preload" as="image" href="/assets/couple_holding_hands.jpg">
+  <link rel="preload" as="image" href="/assets/couple_bengali.jpg">
+
+  <!-- Google Fonts: Luxury Display Serif & Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800&family=Great+Vibes&family=Hind+Siliguri:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="theme-airlines">
+
+  <!-- AUDIO ELEMENT (No autoplay, triggers on user click) -->
+  <audio id="wedding-audio" preload="auto" loop>
+    <source src="/music/Du Haatey Mutho Bhorey Talmar Romeo Juliet Debdutta, Hiya, Debraj, Subhadeep, Nilanjan SVF Music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- AMBIENT CANVAS FOR SUBTLE PARTICLES -->
+  <canvas id="sparkle-canvas"></canvas>
+
+  <!-- TOP UTILITY BAR (Global Luxury Navigation & Controls) -->
+  <aside id="top-utility-bar" class="top-utility-bar">
+    <div class="utility-left">
+      <div class="flight-badge">
+        <span class="flight-dot live-blink"></span>
+        <span class="flight-code">FLIGHT AA 1412</span>
+        <span class="flight-route">CCU ✈ FOREVER</span>
+      </div>
+      <div class="audio-mini-widget" id="audio-mini-widget">
+        <button id="audio-toggle-btn" class="audio-btn" aria-label="Toggle background music" title="Music On/Off">
+          <span class="audio-icon" id="audio-icon">🔈</span>
+          <span class="audio-track-name">🎵 MUSIC ON/OFF</span>
+        </button>
+        <div class="audio-wave paused" id="audio-wave">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="utility-right">
+      <!-- Language Switcher -->
+      <div class="lang-switch-group" role="group" aria-label="Language selection">
+        <button id="lang-en-btn" class="lang-btn active">EN</button>
+        <span class="lang-divider">|</span>
+        <button id="lang-bn-btn" class="lang-btn">বাংলা</button>
+      </div>
+
+      <!-- Device View Toggle for larger screens -->
+      <div class="view-mode-group">
+        <button id="view-mobile-btn" class="view-btn active" title="Mobile Experience View">📱 Mobile</button>
+        <button id="view-web-btn" class="view-btn" title="Grand Web Portal View">💻 Grand Portal</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN APP CONTAINER -->
+  <div id="app-viewport" class="app-viewport mode-mobile">
+
+    <!-- ======================================================= -->
+    <!-- 1. OPENING / INTRO: LUXURY AIRLINE ONBOARDING           -->
+    <!-- ======================================================= -->
+
+    <!-- SCREEN 1: CINEMATIC OPENING -->
+    <section id="screen-loading" class="screen-view active">
+      <div class="screen-bg front-screen-theme-bg" style="background-image: url('/assets/front_screen_design.jpg');"></div>
+      <div class="screen-overlay front-screen-theme-overlay"></div>
+
+      <div class="screen-content flex-center-col opening-layout">
+        <!-- Airline Emblem & Identity -->
+        <div class="airline-brand-lockup animate-fade-in">
+          <div class="monogram-emblem">
+            <div class="emblem-aura-pulse"></div>
+            <div class="emblem-orbit-ring">
+              <span class="orbit-sparkle s1">✦</span>
+              <span class="orbit-sparkle s2">✦</span>
+            </div>
+            <svg class="monogram-svg" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 5 L65 50 L50 42 L35 50 Z" fill="url(#goldGrad)" />
+              <path d="M15 45 Q 35 15 50 10 Q 65 15 85 45 Q 65 35 50 40 Q 35 35 15 45 Z" fill="url(#goldGrad)" opacity="0.9" />
+              <path d="M30 65 L50 20 L70 65 L60 65 L50 35 L40 65 Z" fill="url(#goldGrad)" />
+              <circle cx="50" cy="22" r="3" fill="#FFEAA7" />
+              <defs>
+                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F5E0A3" />
+                  <stop offset="50%" stop-color="#D4AF37" />
+                  <stop offset="100%" stop-color="#996515" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h1 class="brand-title">ARNAB <span class="gold-plane">×</span> ARATRIKA</h1>
+          <p class="brand-subtitle">AIRLINES</p>
+          <div class="gold-divider-plane">
+            <span class="gold-line"></span>
+            <span class="plane-icon">✈</span>
+            <span class="gold-line"></span>
+          </div>
+          <p class="journey-motto" data-i18n="journey_to_forever">THE JOURNEY TO FOREVER</p>
+        </div>
+
+        <!-- Subtle Flight Route Vector Animation -->
+        <div class="flight-route-animation-box">
+          <div class="flight-live-status-pill">
+            <span class="live-dot-pulse"></span>
+            <span class="live-status-txt">BOARDING NOW • FLIGHT AA 1412</span>
+          </div>
+          <div class="flight-route-svg-wrap">
+            <svg class="flight-route-svg" viewBox="0 0 320 80" fill="none">
+              <path class="route-curve-line" d="M 20 60 Q 160 5 300 60" stroke="rgba(212, 175, 55, 0.45)" stroke-dasharray="6,6" stroke-width="2"/>
+              <circle cx="20" cy="60" r="5" fill="#D4AF37" class="airport-beacon" />
+              <circle cx="300" cy="60" r="5" fill="#D4AF37" class="airport-beacon" />
+            </svg>
+            <div class="animated-plane-on-path">✈</div>
+          </div>
+          <div class="route-labels-row">
+            <span class="route-origin"><span class="beacon-glow"></span>KOLKATA (CCU)</span>
+            <span class="route-dest">FOREVER (INFINITY)<span class="beacon-glow"></span></span>
+          </div>
+        </div>
+
+        <!-- Real Hand-Holding Photo Reveal -->
+        <div class="opening-hand-reveal animate-fade-in-delayed">
+          <div class="opening-photo-frame">
+            <div class="photo-vip-ribbon">HONORED PASSENGERS</div>
+            <img src="/assets/couple_holding_hands.jpg" alt="Arnab & Aratrika - Hands United" class="opening-real-photo">
+            <div class="opening-photo-vignette"></div>
+            <div class="photo-corner-gold tl"></div>
+            <div class="photo-corner-gold tr"></div>
+            <div class="photo-corner-gold bl"></div>
+            <div class="photo-corner-gold br"></div>
+          </div>
+          <p class="opening-caption-line" data-i18n="journey_begins_here">YOUR JOURNEY BEGINS HERE</p>
+        </div>
+
+        <!-- Opening CTA Button -->
+        <div class="opening-action-box">
+          <button id="btn-enter-welcome" class="btn-royal-primary pulse-btn btn-lucrative">
+            <span class="btn-shimmer-sweep"></span>
+            <span class="btn-plane-anim">✈</span>
+            <div class="btn-label-stack">
+              <span class="btn-label-main" data-i18n="enter_wedding_lounge">ENTER WEDDING LOUNGE</span>
+              <span class="btn-label-sub" data-i18n="touch_to_enter">TOUCH TO OPEN INVITATION</span>
+            </div>
+            <span class="btn-arrow-bounce">→</span>
+          </button>
+          <p class="mobile-tap-hint">👆 <span data-i18n="tap_hint">Tap above to board the wedding flight</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: WELCOME RESERVATION SCREEN -->
+    <section id="screen-welcome" class="screen-view">
+      <div class="screen-bg welcome-photo-bg" style="background-image: url('/assets/couple_holding_hands.jpg');"></div>
+      <div class="screen-overlay sunset-gradient"></div>
+
+      <div class="screen-content welcome-layout">
+        <div class="welcome-top-nav">
+          <div class="mini-brand-tag">
+            <span class="mini-crest">✈ AA 1412</span>
+            <span class="mini-vip-badge">FIRST CLASS</span>
+          </div>
+          <button class="sound-quick-toggle" id="welcome-audio-toggle" aria-label="Toggle Sound">
+            <span id="welcome-sound-icon">🔈</span>
+          </button>
+        </div>
+
+        <div class="welcome-header animate-slide-down">
+          <div class="monogram-small">AA</div>
+          <h2 class="welcome-airline-name">ARNAB <span class="gold-plane">×</span> ARATRIKA</h2>
+          <span class="welcome-airlines-sub">AIRLINES</span>
+        </div>
+
+        <div class="welcome-message-card glass-panel">
+          <div class="card-gold-corner tl"></div>
+          <div class="card-gold-corner tr"></div>
+          <div class="card-gold-corner bl"></div>
+          <div class="card-gold-corner br"></div>
+          <h3 class="salutation" data-i18n="dear_guest">Dear Guest,</h3>
+          <p class="reserved-text" data-i18n="seat_reserved">Your seat has been reserved for a very special journey.</p>
+          <div class="tagore-romantic-quote">
+            <p class="romantic-line" data-i18n="one_dest">One destination.</p>
+            <p class="romantic-line" data-i18n="one_life">One lifetime.</p>
+            <p class="romantic-line" data-i18n="one_journey">One beautiful journey.</p>
+          </div>
+          <div class="boarding-invitation-badge">
+            <span>✨</span> <span>FLIGHT CONFIRMED • 14 DEC 2026</span> <span>✨</span>
+          </div>
+        </div>
+
+        <div class="welcome-action-box">
+          <button id="btn-enter-boarding-pass" class="btn-royal-primary pulse-btn btn-lucrative">
+            <span class="btn-shimmer-sweep"></span>
+            <span class="btn-plane-anim">✈</span>
+            <div class="btn-label-stack">
+              <span class="btn-label-main" data-i18n="view_boarding_pass">VIEW BOARDING PASS</span>
+              <span class="btn-label-sub" data-i18n="collect_pass">COLLECT YOUR OFFICIAL TICKET</span>
+            </div>
+            <span class="btn-arrow-bounce">→</span>
+          </button>
+          <p class="mobile-tap-hint">🎟️ <span data-i18n="ticket_ready_hint">Your personalized boarding pass is ready</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: DIGITAL BOARDING PASS -->
+    <section id="screen-boarding-pass" class="screen-view">
+      <div class="screen-bg lounge-terminal-bg"></div>
+      <div class="screen-overlay dark-blur-overlay"></div>
+
+      <div class="screen-content boarding-pass-layout">
+        <div class="screen-header-bar">
+          <button id="bp-back-btn" class="nav-back-btn">← <span data-i18n="back">Back</span></button>
+          <span class="screen-title-badge">PASSENGER TICKET</span>
+          <button id="bp-info-btn" class="info-bubble-btn" title="Boarding Details">ℹ️</button>
+        </div>
+
+        <!-- THE LUXURY BOARDING PASS TICKET -->
+        <div id="boarding-pass-card" class="boarding-pass-ticket floral-parchment-ticket">
+          <!-- Ticket Header -->
+          <div class="ticket-header">
+            <div class="ticket-emblem">
+              <span class="emblem-crest">✈ AA ✈</span>
+            </div>
+            <div class="ticket-brand">
+              <h2 class="ticket-airline">ARNAB <span class="plane-sym">×</span> ARATRIKA</h2>
+              <span class="ticket-sub">AIRLINES</span>
+            </div>
+          </div>
+
+          <div class="ticket-badge-strip">
+            <span class="plane-red-icon">✈</span>
+            <span class="ticket-type-title" data-i18n="wedding_reception_pass">WEDDING RECEPTION</span>
+            <span class="ticket-type-sub" data-i18n="boarding_pass_label">BOARDING PASS</span>
+          </div>
+
+          <!-- Real Couple Photo Inside Ticket (Responsive for Mobile & Laptop with Full Picture View) -->
+          <div class="ticket-couple-photo-wrap" id="ticket-couple-photo-wrap" data-photo="/assets/couple_flower.jpg" title="Tap to view high-resolution photo">
+            <div class="ticket-photo-ambient-bg" style="background-image: url('/assets/couple_flower.jpg');"></div>
+            <img src="/assets/couple_flower.jpg" alt="Arnab & Aratrika holding flowers at Howrah Bridge" class="ticket-couple-photo" id="ticket-couple-img">
+            <div class="ticket-photo-gold-border"></div>
+            <div class="ticket-photo-controls">
+              <button type="button" class="ticket-fit-toggle-btn" id="btn-toggle-ticket-fit" title="Toggle Full Picture / Fill Frame">
+                <span id="fit-icon">⛶</span> <span id="fit-label">Full Photo</span>
+              </button>
+              <span class="ticket-zoom-hint">🔍 Tap to expand</span>
+            </div>
+          </div>
+
+          <!-- Route Grid -->
+          <div class="ticket-route-grid">
+            <div class="route-point from">
+              <span class="route-label" data-i18n="from">FROM</span>
+              <span class="route-city">KOLKATA</span>
+              <span class="route-code">(CCU)</span>
+            </div>
+            <div class="route-plane-connector">
+              <span class="route-dash"></span>
+              <span class="plane-flight-icon">✈</span>
+              <span class="route-dash"></span>
+            </div>
+            <div class="route-point to">
+              <span class="route-label" data-i18n="to">TO</span>
+              <span class="route-city">FOREVER</span>
+              <span class="route-code">(INFINITY)</span>
+            </div>
+          </div>
+
+          <!-- Perforated Tear Line -->
+          <div class="ticket-tear-perforation">
+            <span class="tear-notch notch-left"></span>
+            <span class="tear-line"></span>
+            <span class="tear-notch notch-right"></span>
+          </div>
+
+          <!-- Passenger Info -->
+          <div class="ticket-passenger-row">
+            <span class="ticket-field-label" data-i18n="passenger">PASSENGER</span>
+            <span id="ticket-passenger-display" class="ticket-passenger-name">HONORED GUEST & FAMILY</span>
+          </div>
+
+          <!-- Flight Grid -->
+          <div class="ticket-details-grid">
+            <div class="ticket-detail-item">
+              <span class="detail-label" data-i18n="flight">FLIGHT</span>
+              <span class="detail-val highlight-gold">AA 1412</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label" data-i18n="date">DATE</span>
+              <span class="detail-val">14 DEC 2026</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label" data-i18n="boarding">BOARDING</span>
+              <span class="detail-val">EVENING</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label" data-i18n="gate">GATE</span>
+              <span class="detail-val highlight-red">LOVE ❤️</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label" data-i18n="seat">SEAT</span>
+              <span class="detail-val">RESERVED</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label" data-i18n="destination">DESTINATION</span>
+              <span class="detail-val">FOREVER</span>
+            </div>
+          </div>
+
+          <!-- Status Pill -->
+          <div class="ticket-status-row">
+            <div class="status-pill confirmed">
+              <span class="status-lbl" data-i18n="status">STATUS</span>
+              <span class="status-badge">CONFIRMED ✓</span>
+            </div>
+          </div>
+
+          <!-- Barcode Area (Decorative, artistic) -->
+          <div class="ticket-barcode-box">
+            <div class="barcode-lines">
+              <div class="barcode-bars"></div>
+              <span class="barcode-plane">✈</span>
+              <div class="barcode-bars"></div>
+            </div>
+            <span class="barcode-serial">AA-1412-2026-NIRMALA-MATA-MARIA-GIRZA</span>
+          </div>
+
+          <div class="ticket-floral-corner top-left"></div>
+          <div class="ticket-floral-corner top-right"></div>
+          <div class="ticket-floral-corner bottom-left"></div>
+          <div class="ticket-floral-corner bottom-right"></div>
+        </div>
+
+        <div class="ticket-action-buttons">
+          <button id="btn-accept-boarding-pass" class="btn-royal-primary pulse-btn btn-lucrative btn-accept-ticket">
+            <span class="btn-shimmer-sweep"></span>
+            <span class="btn-plane-anim">✈</span>
+            <div class="btn-label-stack">
+              <span class="btn-label-main" data-i18n="accept_boarding_pass">ACCEPT MY BOARDING PASS ✈</span>
+              <span class="btn-label-sub" data-i18n="confirm_boarding_sub">TAP TO CONFIRM SEAT & ENTER LOUNGE</span>
+            </div>
+            <span class="btn-arrow-bounce">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: BOARDING CONFIRMED TRANSITION -->
+    <section id="screen-boarding-confirmed" class="screen-view">
+      <div class="screen-bg window-sky-bg"></div>
+      <div class="screen-overlay twilight-overlay"></div>
+
+      <div class="screen-content flex-center-col boarding-confirmed-layout">
+        <div class="confirmed-badge-box animate-pop-in">
+          <div class="glowing-check-circle">
+            <span class="check-symbol">✓</span>
+          </div>
+          <h2 class="confirmed-headline" data-i18n="boarding_confirmed_title">BOARDING CONFIRMED ✓</h2>
+          <div class="gold-plane-divider">✈ ───── ✈</div>
+        </div>
+
+        <!-- Airplane Window View of Couple Running by Howrah Bridge -->
+        <div class="airplane-window-frame animate-fade-in">
+          <div class="window-rim">
+            <div class="window-glass">
+              <img src="/assets/couple_bridge_run.jpg" alt="Howrah Bridge View" class="howrah-window-view">
+              <div class="window-sun-glare"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="confirmed-invitation-text">
+          <p class="lounge-ready-text" data-i18n="get_ready_lounge">Entering the Wedding Lounge...</p>
+          <p class="blessing-subtext">The journey to forever begins with your gracious presence.</p>
+        </div>
+
+        <button id="btn-proceed-to-lounge" class="btn-gold-action pulse-btn">
+          <span data-i18n="proceed_btn">PROCEED TO LOUNGE ➔</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 2. MAIN HUB: WEDDING LOUNGE & CULTURAL CEREMONY         -->
+    <!-- ======================================================= -->
+    <main id="screen-wedding-lounge" class="screen-view lounge-scroll-container">
+
+      <!-- TOP AIRLINE LOUNGE NAVIGATION BAR -->
+      <nav id="lounge-navbar" class="lounge-navbar">
+        <div class="nav-brand">
+          <button id="nav-logo-btn" class="nav-logo-btn" aria-label="Go to top">
+            <span class="nav-monogram">AA</span>
+            <span class="nav-title">ARNAB × ARATRIKA</span>
+          </button>
+        </div>
+
+        <div class="nav-actions">
+          <button id="guest-ticket-quickview-btn" class="guest-profile-icon" title="View Boarding Pass">
+            <span>🎫</span>
+          </button>
+          <button id="lang-quick-toggle" class="lang-toggle-btn" title="Toggle Bengali / English">
+            <span id="lang-current-label">বাংলা</span>
+          </button>
+          <button id="lounge-audio-btn" class="lounge-audio-toggle" title="Music On/Off">
+            <span id="lounge-sound-icon">🔈</span>
+          </button>
+          <button id="hamburger-menu-btn" class="hamburger-btn" aria-label="Open Navigation Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- NAVIGATION DRAWER -->
+      <div id="nav-drawer" class="nav-drawer">
+        <div class="drawer-header">
+          <div class="drawer-title">
+            <span class="crest">✈ AA</span>
+            <span>FLIGHT DIRECTORY</span>
+          </div>
+          <button id="close-drawer-btn" class="close-drawer" aria-label="Close Menu">✕</button>
+        </div>
+        <ul class="drawer-links">
+          <li><a href="#section-hero" class="drawer-link active"><span>01</span> <span data-i18n="nav_home">HOME</span></a></li>
+          <li><a href="#section-journey" class="drawer-link"><span>02</span> <span data-i18n="nav_story">OUR STORY</span></a></li>
+          <li><a href="#section-gallery" class="drawer-link"><span>03</span> <span data-i18n="nav_photos">PHOTOS</span></a></li>
+          <li><a href="#section-destination" class="drawer-link"><span>04</span> <span data-i18n="nav_destination">DESTINATION</span></a></li>
+        </ul>
+        <div class="drawer-footer">
+          <button id="drawer-reopen-boarding-pass" class="btn-royal-secondary full-width">🎫 My Boarding Pass</button>
+        </div>
+      </div>
+
+      <!-- HORIZONTAL NAVIGATION TABS (Strictly: HOME, OUR STORY, PHOTOS, DESTINATION) -->
+      <div class="lounge-nav-tabs-bar">
+        <div class="nav-tabs-track">
+          <a href="#section-hero" class="nav-tab active" data-target="section-hero" data-i18n="nav_home">HOME</a>
+          <a href="#section-journey" class="nav-tab" data-target="section-journey" data-i18n="nav_story">OUR STORY</a>
+          <a href="#section-gallery" class="nav-tab" data-target="section-gallery" data-i18n="nav_photos">PHOTOS</a>
+          <a href="#section-destination" class="nav-tab" data-target="section-destination" data-i18n="nav_destination">DESTINATION</a>
+        </div>
+      </div>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 1: WEDDING LOUNGE & MAIN HERO                   -->
+      <!-- ======================================================= -->
+      <section id="section-hero" class="lounge-section hero-section">
+        <!-- Sacred Sanskrit Invocation -->
+        <div class="sacred-invocation animate-fade-in">
+          <span class="om-symbol">||</span>
+          <span class="invocation-text" data-i18n="sanskrit_invocation">শ্রীশ্রী প্রজাপতয়ে নমঃ</span>
+          <span class="om-symbol">||</span>
+        </div>
+
+        <!-- PRIMARY HERO: REAL BENGALI TRADITIONAL COUPLE FULLSCREEN HERO -->
+        <div class="hero-cinematic-stage">
+          <div class="hero-image-parallax-wrap">
+            <img src="/assets/couple_bengali.jpg" alt="Arnab & Aratrika - Bengali Traditional Hero" class="hero-bengali-photo">
+            <div class="hero-cinematic-vignette"></div>
+          </div>
+
+          <div class="hero-overlay-headline animate-fade-in-up">
+            <div class="flight-pill">
+              <span class="flight-dot"></span>
+              <span>FLIGHT AA 1412</span>
+              <span>•</span>
+              <span data-i18n="destination_forever">DESTINATION: FOREVER</span>
+            </div>
+            <h1 class="hero-couple-names">ARNAB <span class="heart-amp">×</span> ARATRIKA</h1>
+            <p class="hero-date-banner">14 DECEMBER 2026</p>
+            <p class="hero-journey-begins-tag" data-i18n="journey_begins">THE JOURNEY BEGINS</p>
+          </div>
+        </div>
+
+        <!-- Wedding Lounge Overview Card -->
+        <div class="hero-title-card glass-panel-gold">
+          <h2 class="lounge-welcome-heading" data-i18n="wedding_lounge_title">WELCOME TO THE WEDDING LOUNGE</h2>
+          <p class="hero-reception-tag" data-i18n="hero_wedding_reception">WEDDING RECEPTION</p>
+          <div class="hero-date-venue">
+            <span class="date-icon">📅</span>
+            <span class="date-text" data-i18n="event_date_hero">Monday, 14th December 2026 • Evening</span>
+          </div>
+          <div class="hero-venue-line">
+            <span class="pin-icon">📍</span>
+            <span class="venue-text">Nirmala Mata Maria Girza, Andul Road, Howrah</span>
+          </div>
+
+          <div class="hero-action-buttons">
+            <button id="hero-view-boarding-btn" class="btn-gold-action">
+              <span>🎫</span> <span data-i18n="view_boarding_pass">View Boarding Pass</span>
+            </button>
+            <a href="#section-destination" class="btn-royal-primary">
+              <span>📍</span> <span data-i18n="view_destination_btn">View Destination & Map</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 2: LIVE COUNTDOWN TO 14 DEC 2026 EVENING        -->
+      <!-- ======================================================= -->
+      <section id="section-countdown" class="lounge-section countdown-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">✈</span>
+          <h2 class="section-title" data-i18n="next_departure">NEXT DEPARTURE</h2>
+          <span class="section-sub-route">AA 1412 • KOLKATA ➔ FOREVER</span>
+        </div>
+
+        <div class="departure-target-banner">
+          <h3 class="target-date-title" data-i18n="departure_date">14 December 2026</h3>
+          <p class="target-time-sub" data-i18n="departure_time">(Evening • IST)</p>
+        </div>
+
+        <!-- Live Countdown Cards (Dynamically computed in JS) -->
+        <div class="countdown-grid">
+          <div class="countdown-card">
+            <div class="countdown-digits" id="cd-days">00</div>
+            <div class="countdown-label" data-i18n="days">DAYS</div>
+          </div>
+          <div class="countdown-card">
+            <div class="countdown-digits" id="cd-hours">00</div>
+            <div class="countdown-label" data-i18n="hours">HOURS</div>
+          </div>
+          <div class="countdown-card">
+            <div class="countdown-digits" id="cd-minutes">00</div>
+            <div class="countdown-label" data-i18n="minutes">MINUTES</div>
+          </div>
+          <div class="countdown-card">
+            <div class="countdown-digits" id="cd-seconds">00</div>
+            <div class="countdown-label" data-i18n="seconds">SECONDS</div>
+          </div>
+        </div>
+
+        <div class="countdown-quote-box">
+          <p class="quote-text" data-i18n="journey_begins_soon">The journey to forever begins soon...</p>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 3: COUPLE INTRODUCTION (REAL PORTRAITS)         -->
+      <!-- ======================================================= -->
+      <section id="section-passengers" class="lounge-section passengers-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">👤</span>
+          <h2 class="section-title" data-i18n="meet_the_passengers">MEET THE PASSENGERS</h2>
+          <p class="section-desc" data-i18n="passengers_quote">"Two families. Two journeys. One destination."</p>
+        </div>
+
+        <div class="passengers-cards-container">
+          <!-- CAPTAIN: ARNAB (REAL PORTRAIT IN BLUE/GOLD KURTA) -->
+          <div class="passenger-card groom-card glass-panel">
+            <div class="passenger-role-banner">
+              <span class="role-badge" data-i18n="meet_captain">MEET YOUR CAPTAIN</span>
+            </div>
+
+            <div class="passenger-portrait-frame">
+              <img src="/assets/arnab_portrait.jpg" alt="Arnab Mondal - Real Portrait" class="passenger-real-portrait">
+              <div class="portrait-corner-gold top-left"></div>
+              <div class="portrait-corner-gold bottom-right"></div>
+            </div>
+
+            <div class="passenger-info-content">
+              <h3 class="passenger-name">ARNAB</h3>
+              <p class="passenger-fullname">Arnab Mondal</p>
+
+              <div class="passenger-lineage">
+                <p class="lineage-line">
+                  <span class="lbl" data-i18n="son_of">Son of:</span>
+                  <span class="val">Mr. Amal Kumar Mondal & Mrs. Tapati Mondal</span>
+                </p>
+                <p class="lineage-line">
+                  <span class="lbl" data-i18n="sister_and_bil">Sister & Brother-in-law:</span>
+                  <span class="val">Mrs. Soumi Das & Mr. Kuntal Das</span>
+                </p>
+                <p class="lineage-line">
+                  <span class="lbl" data-i18n="niece_nephew">Niece & Nephew:</span>
+                  <span class="val">Elina Das & Ivaan Das</span>
+                </p>
+                <p class="lineage-line address">
+                  <span class="lbl" data-i18n="residence">Residence:</span>
+                  <span class="val">63/6, Andul 1st By-lane, Danesh Shaikh Lane, Shibpur, Howrah - 711109</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CINEMATIC TRANSITION CARD: CLOSE ROMANTIC PHOTO -->
+          <div class="couple-cinematic-transition-card glass-panel-gold">
+            <div class="transition-photo-wrap">
+              <img src="/assets/couple_indoor.jpg" alt="Arnab & Aratrika - Close Romantic Portrait" class="transition-photo">
+            </div>
+            <div class="transition-caption-box">
+              <h3 class="transition-title">ARNAB × ARATRIKA</h3>
+              <p class="transition-motto" data-i18n="two_stories">TWO STORIES. ONE JOURNEY. ONE FOREVER.</p>
+            </div>
+          </div>
+
+          <!-- DESTINATION: ARATRIKA (REAL PORTRAIT IN BLUE SAREE) -->
+          <div class="passenger-card bride-card glass-panel">
+            <div class="passenger-role-banner">
+              <span class="role-badge" data-i18n="meet_destination">MEET YOUR DESTINATION</span>
+            </div>
+
+            <div class="passenger-portrait-frame">
+              <img src="/assets/aratrika_portrait.jpg" alt="Aratrika Das - Real Portrait" class="passenger-real-portrait">
+              <div class="portrait-corner-gold top-left"></div>
+              <div class="portrait-corner-gold bottom-right"></div>
+            </div>
+
+            <div class="passenger-info-content">
+              <h3 class="passenger-name">ARATRIKA</h3>
+              <p class="passenger-fullname">Aratrika Das</p>
+
+              <div class="passenger-lineage">
+                <p class="lineage-line">
+                  <span class="lbl" data-i18n="daughter_of">Daughter of:</span>
+                  <span class="val">Mr. Arabinda Das & Mrs. Sahana Das Roy</span>
+                </p>
+                <p class="lineage-line">
+                  <span class="lbl" data-i18n="sister">Sister (বোন):</span>
+                  <span class="val">Suchintika Das</span>
+                </p>
+                <p class="lineage-line">
+                  <span class="lbl" data-i18n="paternal_aunt">Paternal Aunt:</span>
+                  <span class="val">Mrs. Minakshi Paul</span>
+                </p>
+                <p class="lineage-line address">
+                  <span class="lbl" data-i18n="residence">Residence:</span>
+                  <span class="val">Udayan Apartment, Balitikuri, Bakultala, Howrah - 711113</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button to open Bengali Parichiti Roster -->
+        <div class="parichiti-action-box">
+          <button id="open-bengali-parichiti-btn" class="btn-gold-outline">
+            <span>📜</span> <span data-i18n="view_bengali_parichiti">View Traditional Bengali Parichiti (পরিচিতি)</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 4: OUR JOURNEY (CINEMATIC CHAPTERS 01 TO 05)    -->
+      <!-- ======================================================= -->
+      <section id="section-journey" class="lounge-section journey-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">🗺</span>
+          <h2 class="section-title" data-i18n="our_journey">OUR JOURNEY</h2>
+          <p class="section-desc" data-i18n="journey_subtitle">Flight Log: From the first spark to forever</p>
+        </div>
+
+        <div class="flight-path-timeline">
+          <!-- CHAPTER 01: THE FIRST HELLO -->
+          <div class="waypoint-item">
+            <div class="waypoint-marker">
+              <span class="marker-icon">01</span>
+              <span class="marker-dot"></span>
+            </div>
+            <div class="waypoint-card glass-panel" data-photo="/assets/couple_standing_head_kiss.jpg">
+              <div class="waypoint-img-wrap">
+                <img src="/assets/couple_standing_head_kiss.jpg" alt="The First Hello" class="waypoint-thumb">
+                <span class="zoom-cue">🔍</span>
+              </div>
+              <div class="waypoint-info">
+                <span class="flight-leg-badge">CHAPTER 01</span>
+                <h3 class="waypoint-title" data-i18n="ch_01_title">THE FIRST HELLO</h3>
+                <p class="waypoint-desc" data-i18n="ch_01_desc">Where two souls first cross paths and the universe aligns.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHAPTER 02: THE JOURNEY -->
+          <div class="waypoint-item">
+            <div class="waypoint-marker">
+              <span class="marker-icon">02</span>
+              <span class="marker-dot"></span>
+            </div>
+            <div class="waypoint-card glass-panel" data-photo="/assets/couple_bridge_run.jpg">
+              <div class="waypoint-img-wrap">
+                <img src="/assets/couple_bridge_run.jpg" alt="The Journey" class="waypoint-thumb">
+                <span class="zoom-cue">🔍</span>
+              </div>
+              <div class="waypoint-info">
+                <span class="flight-leg-badge">CHAPTER 02</span>
+                <h3 class="waypoint-title" data-i18n="ch_02_title">THE JOURNEY</h3>
+                <p class="waypoint-desc" data-i18n="ch_02_desc">Running hand in hand through the timeless streets of Kolkata.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHAPTER 03: THE MEMORIES -->
+          <div class="waypoint-item">
+            <div class="waypoint-marker">
+              <span class="marker-icon">03</span>
+              <span class="marker-dot"></span>
+            </div>
+            <div class="waypoint-card glass-panel" data-photo="/assets/ring_ceremony_1.jpg">
+              <div class="waypoint-img-wrap">
+                <img src="/assets/ring_ceremony_1.jpg" alt="The Memories" class="waypoint-thumb">
+                <span class="zoom-cue">🔍</span>
+              </div>
+              <div class="waypoint-info">
+                <span class="flight-leg-badge">CHAPTER 03</span>
+                <h3 class="waypoint-title" data-i18n="ch_03_title">THE MEMORIES</h3>
+                <p class="waypoint-desc" data-i18n="ch_03_desc">Exchanging rings, shared laughter, and moments etched in gold.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHAPTER 04: THE PROMISE -->
+          <div class="waypoint-item">
+            <div class="waypoint-marker">
+              <span class="marker-icon">04</span>
+              <span class="marker-dot"></span>
+            </div>
+            <div class="waypoint-card glass-panel" data-photo="/assets/couple_registry.jpg">
+              <div class="waypoint-img-wrap">
+                <img src="/assets/couple_registry.jpg" alt="The Promise" class="waypoint-thumb">
+                <span class="zoom-cue">🔍</span>
+              </div>
+              <div class="waypoint-info">
+                <span class="flight-leg-badge">CHAPTER 04</span>
+                <h3 class="waypoint-title" data-i18n="ch_04_title">THE PROMISE</h3>
+                <p class="waypoint-desc" data-i18n="ch_04_desc">The sacred union of two families, bound by heartfelt vows.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHAPTER 05: THE FOREVER -->
+          <div class="waypoint-item">
+            <div class="waypoint-marker">
+              <span class="marker-icon">05</span>
+              <span class="marker-dot pulse"></span>
+            </div>
+            <div class="waypoint-card glass-panel highlight-border" data-photo="/assets/couple_black_red.jpg">
+              <div class="waypoint-img-wrap">
+                <img src="/assets/couple_black_red.jpg" alt="The Forever" class="waypoint-thumb">
+                <span class="zoom-cue">🔍</span>
+              </div>
+              <div class="waypoint-info">
+                <span class="flight-leg-badge gold">CHAPTER 05</span>
+                <h3 class="waypoint-title" data-i18n="ch_05_title">THE FOREVER</h3>
+                <p class="waypoint-desc" data-i18n="ch_05_desc">Two lives joining into one infinite voyage across eternity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 5: EDITORIAL PHOTO STORY (REAL PHOTOGRAPHS)     -->
+      <!-- ======================================================= -->
+      <section id="section-gallery" class="lounge-section gallery-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">📸</span>
+          <h2 class="section-title" data-i18n="photo_story_title">EDITORIAL PHOTO STORY</h2>
+          <p class="section-desc" data-i18n="photo_story_desc">Cinematic moments captured on the journey of Arnab & Aratrika</p>
+        </div>
+
+        <div class="editorial-photo-story">
+          <!-- Featured Editorial 1: Rose Petals Climax -->
+          <div class="editorial-feature-item" data-photo="/assets/couple_rose_petals.jpg">
+            <div class="editorial-img-container">
+              <img src="/assets/couple_rose_petals.jpg" alt="Rose Petal Rain" class="editorial-img">
+              <div class="editorial-overlay">
+                <span class="editorial-tag">CLIMAX</span>
+                <h3 class="editorial-title">Shower of Rose Petals</h3>
+                <p class="editorial-caption">Love celebrated in full bloom.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asymmetric Grid 2 & 3 -->
+          <div class="editorial-dual-row">
+            <div class="editorial-card-item" data-photo="/assets/victoria_memorial.jpg">
+              <div class="editorial-img-container">
+                <img src="/assets/victoria_memorial.jpg" alt="Victoria Memorial Kolkata" class="editorial-img">
+                <div class="editorial-overlay">
+                  <span class="editorial-tag">KOLKATA</span>
+                  <h4 class="editorial-sub-title">City of Joy & Heritage</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="editorial-card-item" data-photo="/assets/couple_flower.jpg">
+              <div class="editorial-img-container">
+                <img src="/assets/couple_flower.jpg" alt="Couple with Red Flower" class="editorial-img">
+                <div class="editorial-overlay">
+                  <span class="editorial-tag">DEVOTION</span>
+                  <h4 class="editorial-sub-title">Grace & Togetherness</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asymmetric Grid 4 & 5 -->
+          <div class="editorial-dual-row reverse">
+            <div class="editorial-card-item" data-photo="/assets/ring_ceremony_2.jpg">
+              <div class="editorial-img-container">
+                <img src="/assets/ring_ceremony_2.jpg" alt="Ring Ceremony Celebration" class="editorial-img">
+                <div class="editorial-overlay">
+                  <span class="editorial-tag">CEREMONY</span>
+                  <h4 class="editorial-sub-title">The Golden Ring</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="editorial-card-item" data-photo="/assets/couple_indoor.jpg">
+              <div class="editorial-img-container">
+                <img src="/assets/couple_indoor.jpg" alt="Intimate Couple Portrait" class="editorial-img">
+                <div class="editorial-overlay">
+                  <span class="editorial-tag">CLOSENESS</span>
+                  <h4 class="editorial-sub-title">A Whisper of Forever</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 6: OFFICIAL TRADITIONAL INVITATION CARD         -->
+      <!-- SOURCE OF TRUTH: PHYSICAL INVITATION WORDING            -->
+      <!-- ======================================================= -->
+      <section id="section-invitation-card" class="lounge-section invitation-card-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">📜</span>
+          <h2 class="section-title" data-i18n="official_invitation">OFFICIAL WEDDING INVITATION</h2>
+          <p class="section-desc" data-i18n="invitation_card_desc">Preserving the sacred traditions and wordings of our physical card</p>
+        </div>
+
+        <div class="official-card-wrapper floral-parchment-ticket">
+          <p class="card-sanskrit-heading">|| Shree Shree Prajapataye Namah ||</p>
+
+          <p class="card-hosts-line">
+            <strong>Mr. Amal Kumar Mondal</strong><br>
+            &<br>
+            <strong>Mrs. Tapati Mondal</strong>
+          </p>
+
+          <p class="card-request-line" data-i18n="card_request_text">
+            cordially request the pleasure of your gracious presence and blessings on the auspicious occasion of the
+          </p>
+
+          <h3 class="card-event-heading" data-i18n="wedding_reception">Wedding Reception</h3>
+
+          <p class="card-son-line" data-i18n="of_their_son">of their son</p>
+
+          <h2 class="card-couple-groom">ARNAB</h2>
+
+          <p class="card-with-line" data-i18n="with">with</p>
+
+          <h2 class="card-couple-bride">ARATRIKA</h2>
+
+          <p class="card-daughter-line">
+            Daughter of<br>
+            <strong>Mr. Arabinda Das</strong> & <strong>Mrs. Sahana Das Roy</strong>
+          </p>
+
+          <div class="card-schedule-box">
+            <p class="card-date-highlight">MONDAY, 14TH DECEMBER 2026</p>
+            <p class="card-time-highlight">EVENING</p>
+            <p class="card-at-line">AT:</p>
+            <h4 class="card-venue-name">“NIRMALA MATA MARIA GIRZA”</h4>
+            <p class="card-venue-addr">193/2, Andul Road, Danesh Shaikh Lane, Howrah – 711109</p>
+          </div>
+
+          <!-- Buttons for Traditional Bengali Card & Smaraklipi Modal -->
+          <div class="card-actions-row">
+            <button id="view-bengali-card-btn" class="btn-royal-primary">
+              <span>📜</span> <span data-i18n="view_bengali_parichiti">View Bengali Card & Smaraklipi</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Physical Invitation Card Gallery Scans -->
+        <div class="physical-gallery-grid">
+          <div class="gallery-card-item" data-full="/assets/card_cover.jpg">
+            <img src="/assets/card_cover.jpg" alt="Invitation Envelope Cover" class="gallery-thumb">
+            <div class="gallery-cap">
+              <strong data-i18n="card_cover_title">Card Cover (গৃহলক্ষ্মী বরণ)</strong>
+              <span>Tagore verse: "আমার স্মরণ শুভ সিঁদুরে..."</span>
+            </div>
+          </div>
+
+          <div class="gallery-card-item" data-full="/assets/card_bengali.jpg">
+            <img src="/assets/card_bengali.jpg" alt="Bengali Invitation Card" class="gallery-thumb">
+            <div class="gallery-cap">
+              <strong data-i18n="card_bengali_title">Bengali Invitation Card</strong>
+              <span>স্মারকলিপি, পরিচিতি ও সবিনয় নিবেদন</span>
+            </div>
+          </div>
+
+          <div class="gallery-card-item" data-full="/assets/card_english.jpg">
+            <img src="/assets/card_english.jpg" alt="English Invitation Card" class="gallery-thumb">
+            <div class="gallery-cap">
+              <strong data-i18n="card_english_title">English Invitation Card</strong>
+              <span>|| Shree Shree Prajapataye Namah ||</span>
+            </div>
+          </div>
+
+          <div class="gallery-card-item" data-full="/assets/tagore_poem_upright.jpg">
+            <img src="/assets/tagore_poem_upright.jpg" alt="Tagore Wedding Benediction" class="gallery-thumb">
+            <div class="gallery-cap">
+              <strong data-i18n="tagore_poem_title">Tagore Wedding Benediction</strong>
+              <span>"দুটি হৃদয়ে একটি আসন..."</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 7: FINAL DESTINATION & TRAVEL TRANSIT           -->
+      <!-- ======================================================= -->
+      <section id="section-destination" class="lounge-section destination-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">📍</span>
+          <h2 class="section-title" data-i18n="final_destination">FINAL DESTINATION</h2>
+          <p class="section-desc" data-i18n="venue_card_subtitle">Official Reception Venue as stated in invitation</p>
+        </div>
+
+        <div class="venue-showcase-card glass-panel-gold">
+          <div class="venue-church-header">
+            <span class="church-cross-badge">⛪</span>
+            <h3 class="venue-name" data-i18n="venue_name">NIRMALA MATA MARIA GIRZA</h3>
+            <p class="venue-alias">(Nirmala Mata Mary Catholic Church)</p>
+          </div>
+
+          <div class="venue-address-box">
+            <p class="venue-full-address" data-i18n="venue_address">193/2, Andul Road, Danesh Shaikh Lane, Howrah – 711109</p>
+          </div>
+
+          <!-- Real church photo -->
+          <div class="venue-photo-container">
+            <img src="/assets/venue_church.jpg" alt="Nirmala Mata Maria Girza Church" class="venue-church-photo">
+            <div class="venue-tag-overlay">
+              <span>📍 Danesh Shaikh Lane, Howrah</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons: Real Google Maps, Directions, Call -->
+          <div class="venue-action-buttons">
+            <a href="https://www.google.com/maps/search/?api=1&query=Nirmala+Mata+Maria+Girza+193%2F2+Andul+Road+Howrah+711109" target="_blank" rel="noopener noreferrer" class="btn-royal-primary">
+              <span>🗺</span> <span data-i18n="open_google_maps">OPEN GOOGLE MAPS</span>
+            </a>
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Nirmala+Mata+Maria+Girza+Howrah+711109" target="_blank" rel="noopener noreferrer" class="btn-gold-action">
+              <span>🧭</span> <span data-i18n="get_directions">GET DIRECTIONS</span>
+            </a>
+
+            <a href="tel:8013901890" class="btn-royal-call">
+              <span>📞</span> <span data-i18n="call_contact">CALL : 8013901890</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- HOW TO REACH (TRANSIT INFO) -->
+        <div class="transport-info-card glass-panel">
+          <div class="bus-icon-header">
+            <span class="transit-badge">🚌 HOW TO REACH</span>
+          </div>
+
+          <div class="route-origin-block">
+            <span class="origin-label">FROM:</span>
+            <strong class="origin-val">HOWRAH STATION</strong>
+          </div>
+
+          <div class="route-details-box">
+            <h4 class="route-heading" data-i18n="bus_route_label">BUS ROUTE:</h4>
+            <p class="route-instruction" data-i18n="bus_route_text">
+              From Howrah Station take a bus towards: Andul / Alampur / Bakultala / Danesh Sheikh Lane and other buses on these routes.
+            </p>
+          </div>
+
+          <div class="bus-stop-highlight">
+            <span class="stop-pin">🚏</span>
+            <div class="stop-text">
+              <span class="stop-label" data-i18n="nearest_bus_stop_label">NEAREST BUS STOP:</span>
+              <span class="stop-name" data-i18n="nearest_bus_stop_val">Danesh Sheikh Lane</span>
+            </div>
+          </div>
+
+          <!-- Victoria Memorial Feature Photo for Kolkata Route -->
+          <div class="transit-city-photo-wrap">
+            <img src="/assets/victoria_memorial.jpg" alt="Victoria Memorial Kolkata" class="transit-city-photo">
+            <div class="transit-photo-label">
+              <span>Kolkata ➔ Howrah ➔ Danesh Sheikh Lane</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 8: SAVE THE DATE (ICS & GOOGLE CALENDAR)        -->
+      <!-- ======================================================= -->
+      <section id="section-calendar" class="lounge-section calendar-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">📅</span>
+          <h2 class="section-title" data-i18n="save_the_date">SAVE THE DATE</h2>
+          <p class="section-desc" data-i18n="calendar_desc">Add this event to your calendar so you never miss it!</p>
+        </div>
+
+        <div class="calendar-event-card glass-panel-gold">
+          <div class="event-schedule-header">
+            <div class="calendar-page-icon">
+              <span class="cal-month">DEC</span>
+              <span class="cal-day">14</span>
+            </div>
+            <div class="event-schedule-text">
+              <span class="event-day-name" data-i18n="calendar_day">MONDAY</span>
+              <h3 class="event-full-date" data-i18n="calendar_full_date">14 DECEMBER 2026</h3>
+              <span class="event-timing" data-i18n="calendar_timing">EVENING</span>
+            </div>
+          </div>
+
+          <div class="calendar-location-summary">
+            <span class="pin">📍</span>
+            <div class="loc-text">
+              <strong>NIRMALA MATA MARIA GIRZA</strong>
+              <span>HOWRAH – 711109</span>
+            </div>
+          </div>
+
+          <!-- Direct Calendar Buttons -->
+          <div class="calendar-buttons-group">
+            <button id="btn-add-google-cal" class="btn-calendar google">
+              <svg class="cal-logo-svg" viewBox="0 0 24 24" width="20" height="20">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span data-i18n="add_google_calendar">ADD TO GOOGLE CALENDAR</span>
+            </button>
+
+            <button id="btn-download-ics" class="btn-calendar ics">
+              <span>📅</span>
+              <span data-i18n="download_ics_file">DOWNLOAD .ICS CALENDAR EVENT</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 9: SHARE OUR INVITATION                         -->
+      <!-- ======================================================= -->
+      <section id="section-share" class="lounge-section share-section">
+        <div class="section-badge-header">
+          <span class="section-flight-icon">💌</span>
+          <h2 class="section-title" data-i18n="share_invitation">SHARE OUR INVITATION</h2>
+          <p class="section-desc">Share this digital boarding pass with family and friends</p>
+        </div>
+
+        <div class="social-share-box glass-panel">
+          <div class="share-buttons-row">
+            <a id="btn-share-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn-share whatsapp" title="Share via WhatsApp">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+              </svg>
+              <span>Share on WhatsApp</span>
+            </a>
+
+            <button id="btn-copy-link" class="btn-share copylink" title="Copy Invitation Link">
+              <span>🔗</span>
+              <span data-i18n="copy_link">Copy Link</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SECTION 10: FINAL CINEMATIC SCENE (ROMANTIC CLIMAX)    -->
+      <!-- ======================================================= -->
+      <section id="section-finale" class="lounge-section finale-section">
+        <div class="finale-cinematic-stage">
+          <div class="finale-image-wrap">
+            <img src="/assets/couple_rose_petals.jpg" alt="Arnab & Aratrika - Finale" class="finale-bg-photo">
+            <div class="finale-gradient-overlay"></div>
+          </div>
+
+          <div class="finale-text-content">
+            <p class="finale-line-1" data-i18n="flight_may_end">THE FLIGHT MAY END...</p>
+            <p class="finale-line-2" data-i18n="journey_begins_line">...BUT THE JOURNEY BEGINS.</p>
+
+            <div class="finale-gold-divider">✈ ───── ✈</div>
+
+            <h2 class="finale-couple-names">ARNAB × ARATRIKA</h2>
+            <p class="finale-date">14 DECEMBER 2026</p>
+
+            <p class="finale-see-you" data-i18n="see_you_destination">SEE YOU AT THE DESTINATION ❤️</p>
+
+            <div class="finale-family-blessing">
+              <p class="part-of-journey" data-i18n="part_of_journey">Thank you for being part of our journey.</p>
+              <p class="with-love-line" data-i18n="with_love">With love,</p>
+              <h3 class="family-names" data-i18n="the_families">The Mondal & Das Families</h3>
+              <p class="contact-footer">Contact: 8013901890</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+          <div class="footer-airline-monogram">
+            <span class="plane-sym">✈</span> AA <span class="plane-sym">✈</span>
+          </div>
+          <p class="footer-title">ARNAB & ARATRIKA AIRLINES</p>
+          <p class="footer-sub">The Journey to Forever • 14 December 2026</p>
+          <p class="footer-made-with">Crafted with endless love for family & friends ❤️</p>
+        </footer>
+      </section>
+
+    </main>
+
+    <!-- FLOATING AUTO-TOUR CONTROLLER HUD (3-5s per section) -->
+    <div id="auto-tour-hud" class="auto-tour-hud" style="display: none;">
+      <button id="btn-toggle-auto-tour" class="auto-tour-pill-btn active" title="Automatic Journey Tour (3-5s per section)">
+        <span class="tour-status-dot"></span>
+        <span class="tour-icon-state" id="tour-icon">⏸</span>
+        <span class="tour-text-content">
+          <span class="tour-main-txt" id="tour-label" data-i18n="auto_tour_on">AUTO TOUR</span>
+          <span class="tour-timer-badge"><span id="tour-countdown-val">4</span>s</span>
+        </span>
+        <span class="tour-plane-motion">✈</span>
+      </button>
+    </div>
+
+  </div> <!-- /app-viewport -->
+
+  <!-- ======================================================= -->
+  <!-- MODALS & LIGHTBOXES                                     -->
+  <!-- ======================================================= -->
+
+  <!-- FULLSCREEN PHOTO LIGHTBOX -->
+  <div id="image-lightbox" class="app-modal">
+    <div class="modal-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close">✕</button>
+      <img id="lightbox-img" src="" alt="Photo Full View" class="lightbox-content-img">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- BENGALI PARICHITI MODAL (Physical Card Exact Text) -->
+  <div id="modal-bengali-parichiti" class="app-modal">
+    <div class="modal-backdrop" id="parichiti-backdrop"></div>
+    <div class="modal-dialog bengali-parichiti-dialog glass-panel-gold">
+      <button class="modal-close-btn" id="close-parichiti-modal-btn">✕</button>
+      <div class="parichiti-modal-content">
+        <div class="parichiti-header">
+          <h2 class="bengali-title">[ পরিচিতি ]</h2>
+          <div class="swastika-icon">卐</div>
+        </div>
+
+        <div class="parichiti-dual-columns">
+          <div class="parichiti-col groom-col">
+            <h3 class="col-heading">পাত্র পক্ষ</h3>
+            <p><strong>পাত্র :</strong> কল্যাণীয় অর্ণব</p>
+            <p><strong>পিতা :</strong> শ্রী অমল কুমার মণ্ডল</p>
+            <p><strong>মাতা :</strong> শ্রীমতী তপতী মণ্ডল</p>
+            <p><strong>দিদি :</strong> শ্রীমতী সৌমি দাস</p>
+            <p><strong>জামাইবাবু :</strong> শ্রী কুন্তল দাস</p>
+            <p><strong>ভাগ্নী-ভাগ্না :</strong> এলিনা দাস, ইভান দাস</p>
+            <p><strong>নিবাস :</strong> ৬৩/৬, আন্দুল ফার্স্ট বাইলেন, দানেশ শেখ লেন, শিবপুর, হাওড়া - ৭১১১০৯</p>
+          </div>
+
+          <div class="parichiti-col bride-col">
+            <h3 class="col-heading">পাত্রী পক্ষ</h3>
+            <p><strong>পাত্রী :</strong> কল্যাণীয়া আরত্রিকা</p>
+            <p><strong>পিতা :</strong> শ্রী অরবিন্দ দাস</p>
+            <p><strong>মাতা :</strong> শ্রীমতী সাহানা দাস রায়</p>
+            <p><strong>ভগিনী / বোন :</strong> সুচিন্তিকা দাস</p>
+            <p><strong>পিসি :</strong> শ্রীমতী মীনাক্ষী পাল</p>
+            <p><strong>নিবাস :</strong> উদয়ন অ্যাপার্টমেন্ট, বালিতিকুরী, বকুলতলা, হাওড়া - ৭১১১১৩</p>
+          </div>
+        </div>
+
+        <div class="smaraklipi-box">
+          <h3 class="bengali-title">[ স্মারকলিপি ]</h3>
+          <p><strong>শুভবিবাহ :</strong> ২৬শে অগ্রহায়ণ ১৪৩৩ (ইং ১৩ই ডিসেম্বর, ২০২৬) রবিবার</p>
+          <p><strong>প্রীতিভোজ :</strong> ২৭শে অগ্রহায়ণ ১৪৩৩ (ইং ১৪ই ডিসেম্বর, ২০২৬) সোমবার সন্ধ্যায়</p>
+          <p><strong>স্থান :</strong> 'নির্মলা মাতা মারিয়া গির্জা', ১৯৩/২, আন্দুল রোড, দানেশ শেখ লেন, হাওড়া - ৭১১১০৯</p>
+          <p><strong>পথনির্দেশ :</strong> হাওড়া স্টেশন থেকে আন্দুল / আলমপুর / বকুলতলা / দানেশ শেখ লেন গামী বাস স্টপেজ : দানেশ শেখ লেন।</p>
+          <p><strong>যোগাযোগ :</strong> ৮০১৩৯০১৮৯০</p>
+        </div>
+
+        <button id="close-parichiti-bottom-btn" class="btn-royal-primary full-width">বন্ধ করুন (Close)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast-notification" class="toast-notification"></div>
+
+  <!-- APPLICATION SCRIPTS -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
